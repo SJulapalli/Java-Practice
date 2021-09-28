@@ -1,4 +1,4 @@
 
-public class Bag {
-
+public class Bag<Item> implements Iterable<Item>{
+ 
 }
