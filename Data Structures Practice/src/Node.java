@@ -1,15 +1,15 @@
 
 public class Node<Item> {
 	public Node<Item> next;
-	public Item value;
+	public Item item;
 	
 	public Node() {
-		value = null;
-		next = null;
+		this.item = null;
+		this.next = null;
 	}
 	
 	public Node(Item item, Node<Item> next) {
-		value = item;
+		this.item = item;
 		this.next = next;
 	}
 }
