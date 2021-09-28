@@ -1,7 +1,7 @@
 
 public class Node<Item> {
-	private Node<Item> next;
-	private Item value;
+	public Node<Item> next;
+	public Item value;
 	
 	public Node() {
 		value = null;
