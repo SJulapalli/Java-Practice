@@ -52,16 +52,12 @@ public class Queue<Item> implements Iterable<Item> {
 	}
 	
 	public Iterator<Item> iterator() {
-		return new queueIterator(first);
+		return new queueIterator();
 	}
 	
-	private class queueIterator<Item> implements Iterator<Item> {
+	private class queueIterator implements Iterator<Item> {
 		private Node<Item> current;
-		
-		public queueIterator(Node<Item> first) {
-			current = first;
-		}
-		
+
 		public boolean hasNext() {
 			return current != null;
 		}

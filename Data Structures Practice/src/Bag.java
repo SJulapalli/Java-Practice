@@ -30,7 +30,7 @@ public class Bag<Item> implements Iterable<Item>{
 	}
 	
 	public Iterator<Item> iterator() {
-		return new bagIterator(first);
+		return new bagIterator();
 	}
 	
 	/**
@@ -41,10 +41,6 @@ public class Bag<Item> implements Iterable<Item>{
 	 */
 	private class bagIterator implements Iterator<Item> {
 		private Node<Item> current;
-
-		public bagIterator(Node<Item> first) {
-			current = first;
-			}
 
 		public boolean hasNext() {
 			return current != null;
