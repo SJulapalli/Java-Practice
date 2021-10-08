@@ -1,3 +1,4 @@
+package elementaryClasses;
 
 public class Node<Item> {
 	public Node<Item> next;
